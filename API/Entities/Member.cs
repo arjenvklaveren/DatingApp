@@ -21,5 +21,5 @@ public class Member
 
     [JsonIgnore]
     [ForeignKey(nameof(Id))]
-    public AppUser user { get; set; } = null!;
+    public AppUser User { get; set; } = null!;
 }
