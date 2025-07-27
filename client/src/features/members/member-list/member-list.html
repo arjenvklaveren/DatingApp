@@ -11,6 +11,7 @@
             </div>
             @if (paginatedResult.metadata; as metadata) {
                 <app-paginator 
+                    [hidden]="metadata.totalCount === 0" 
                     [pageNumber]="metadata.currentPage"
                     [totalCount]="metadata.totalCount"
                     [pageSize]="metadata.pageSize"
